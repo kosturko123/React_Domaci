@@ -108,3 +108,48 @@ h1 {
         }
     }
 }
+
+.burgerContainer::after {
+    content: "";
+    position: absolute;
+    right: 35px;
+    top: (35px / 2);
+    z-index: 0;
+    width: calc(6rem + 15rem);
+    background-color: $lightGrey;
+    height: 2px;
+    transition: 0.5s all;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 0 0 0;
+
+    img {
+        width: auto;
+        height: 3rem;
+    }
+
+    .profileContents {
+        padding: 0 0 0 1rem;
+
+        p.name {
+            padding: 0;
+            margin: 0;
+            font-size: 16.7px;
+            color: $darkGrey;
+            text-transform: capitalize;
+            font-weight: $heavyFont;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: 13.9px;
+            color: $darkGrey;
+            text-transform: lowercase;
+        }
+    }
+}
