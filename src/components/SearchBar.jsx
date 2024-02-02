@@ -1,9 +1,13 @@
 import React from 'react'
 import Icon from '../images/Logo.svg'
+import { useMenu } from '../Contexts/MenuContext'
 
 const SearchBar = () => {
+
+  const setMenu = useMenu()
+
   return (
-    <div className='searchBar'>
+    <div className={setMenu === false?"searchBar":"searchBar active"}>
         <div className='logoContainer'>
             <img src={Icon} alt="logo" />
         </div>
