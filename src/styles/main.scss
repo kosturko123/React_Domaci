@@ -18,6 +18,12 @@ h1 {
     justify-content: center;
 }
 
+h3{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
 .App{
     display: flex;
     //flex-direction: row;
@@ -574,4 +580,60 @@ h1 {
 .pictureZoomed.active{
     transition: margin 1s ease-in-out;
     width: 70%;
+}
+
+.dashboard{
+  border-radius: 10%;
+  padding: 5%;
+  background-color: $green;
+  margin-top: 10%;
+  margin-left: 35%;
+}
+
+.wrapper{
+
+    border-radius: 10%;
+    padding: 5%;
+    background-color: $lightGreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .inputBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    //background-color: $green;
+    margin: 30px 0;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: auto;
+    border: 2px rgba(0, 0, 0, .1);
+    border-radius: 100px;
+    color: $darkGrey;
+    padding-left: 5px;
+}
+
+.inputBox input::placeholder{
+    color: $darkGrey;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.profil{
+    border-radius: 10%;
+    padding: 5%;
+    background-color: $green;
+    margin-top: 10%;
+    margin-left: 35%;
 }

@@ -65,7 +65,7 @@ const Galerija = () => {
                         />
                     ))}
                 </Masonry>
-            </ResponsiveMasonry>
+      </ResponsiveMasonry>
       </div>
     </div>
   )

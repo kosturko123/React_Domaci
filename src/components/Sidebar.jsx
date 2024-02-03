@@ -41,7 +41,7 @@ const Sidebar = () => {
         <ul>
             <li className={location.pathname === "/"?"active":""}>
                 <img src={Dashboard} alt="dashboard" />
-                <a href="/">Glavna Stranica</a>
+                <a href="/">login</a>
             </li>
             <li className={location.pathname === "/galerija" ? "active": ""}>
                 <img src={Dashboard} alt="dashboard" />
@@ -49,7 +49,7 @@ const Sidebar = () => {
             </li>
             <li className={location.pathname === "/profil" ? "active" : ""}>
                 <img src={Dashboard} alt="dashboard" />
-                <a href="/profil">Profil</a>
+                <a href="/profil">Register</a>
             </li>
         </ul>
       </div>
